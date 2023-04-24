@@ -8,6 +8,8 @@ import WrongPath from './components/WrongPath'
 import History from './components/History'
 import Team from ".//components/Team"
 import Company from ".//components/Company"
+import Members from './components/Members'
+import MemberDetail from './components/MemberDetail'
 
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
           <Route path='company' element={<Company/>}/>  {/* Bunun gibi child path lerin başına / koyunca hata veriyor*/}
           <Route path='team' element={<Team/>}/>
         </Route>
+        <Route path='/members' element={<Members />} />
+        <Route path='/members/:memberID' element={<MemberDetail />} />
         <Route path='*' element={<WrongPath />} />  {/* Yukarıdaki url'ler harici bu sayfaya gider */}
       </Routes>
     </>
