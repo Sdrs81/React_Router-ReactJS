@@ -26,7 +26,7 @@ function App() {
           <Route path='team' element={<Team/>}/>
         </Route>
         <Route path='/members' element={<Members />} />
-        <Route path='/members/:memberID' element={<MemberDetail />} />
+        <Route path='/members/:memberID/:name' element={<MemberDetail />} />
         <Route path='*' element={<WrongPath />} />  {/* Yukarıdaki url'ler harici bu sayfaya gider */}
       </Routes>
     </>
